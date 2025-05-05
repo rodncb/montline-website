@@ -55,7 +55,7 @@ header .container {
 }
 
 header img {
-  height: 50px;
+  height: 70px;
 }
 
 nav {
@@ -135,7 +135,7 @@ nav ul li a.active::after {
 .banner-container {
   height: 600px;
   position: relative;
-  background-image: url(/industrial-banner.jpg);
+  background-image: url(/banner-site.jpeg);
   background-size: cover;
   background-position: center;
   overflow: hidden;

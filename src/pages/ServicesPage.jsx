@@ -9,7 +9,7 @@ function ServicesPage() {
         <section>
           <h2>Projetos</h2>
           <ServiceCard
-            title="Desenvolvimento de Projetos Industriais"
+            title="Projetos Industriais"
             description="Elaborando desde projetos básicos até a implementação total do investimento, passando pelas fases de especificação, compras e gerenciamento de montagens."
           />
           <ServiceCard
@@ -21,8 +21,9 @@ function ServicesPage() {
             description="Especificação técnica de máquinas e equipamentos."
           />
           <ServiceCard
-            title="Projetos de Instrumentação"
-            description="Desenvolvimento de projetos de instrumentação industrial, com a elaboração de malhas de controle, folhas de especificação e P&ID."
+            title="Projetos de Instrumentação e SIS (Sistemas Instumendados de Segurança)"
+            description="Desenvolvimento de projetos de instrumentação industrial, com a elaboração de malhas de controle, folhas de especificação e P&ID. 
+            Projeto, especificação e montagem de malhas de segurança (SIS) com calculo do nível de intefridade da malha (SIL)."
           />
         </section>
         <section>

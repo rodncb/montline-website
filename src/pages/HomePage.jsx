@@ -24,12 +24,12 @@ function HomePage() {
             <h2>Quem Somos / Nossa Expertise</h2>
             <p>
               Nossa empresa conta com profissionais experientes nas várias
-              disciplinas de engenharias como elétrica, mecânica e
-              instrumentação e controle de processos, desenvolvendo projetos de
-              expansão ou melhorias em empresas de diversos setores industriais
-              como Química e Petroquímica, Papel e Celulose, Automotivas,
-              Siderurgia e Mineração. Nosso foco prioriza o melhor custo
-              benefício para os clientes sempre com forte visão de qualidade.
+              disciplinas de engenharias como elétrica, mecânica, instrumentação
+              e controle de processos, desenvolvendo projetos de expansão ou
+              melhorias em empresas de diversos setores industriais como Química
+              e Petroquímica, Papel e Celulose, Automotivas, Siderurgia e
+              Mineração. Nosso foco prioriza o melhor custo benefício para os
+              clientes sempre com forte visão de qualidade.
             </p>
           </section>
         </div>

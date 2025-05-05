@@ -5,6 +5,13 @@ function Header() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Função para verificar a rota ativa
+  const isActive = (path) => {
+    return (
+      location.hash === "#" + path || (path === "/" && location.hash === "")
+    );
+  };
+
   // Fechar o menu quando mudar de rota
   useEffect(() => {
     setMenuOpen(false);
@@ -31,7 +38,7 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <img src="/logo-monline.png" alt="MONTLINE Logo" />
+        <img src="logo-monline.png" alt="MONTLINE Logo" />
 
         <div
           className={`mobile-menu-toggle ${menuOpen ? "active" : ""}`}
@@ -47,7 +54,7 @@ function Header() {
             <li>
               <Link
                 to="/"
-                className={location.pathname === "/" ? "active" : ""}
+                className={isActive("/") ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
                 Início
@@ -56,7 +63,7 @@ function Header() {
             <li>
               <Link
                 to="/sobre"
-                className={location.pathname === "/sobre" ? "active" : ""}
+                className={isActive("/sobre") ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
                 Sobre
@@ -65,7 +72,7 @@ function Header() {
             <li>
               <Link
                 to="/servicos"
-                className={location.pathname === "/servicos" ? "active" : ""}
+                className={isActive("/servicos") ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
                 Serviços
@@ -74,7 +81,7 @@ function Header() {
             <li>
               <Link
                 to="/contato"
-                className={location.pathname === "/contato" ? "active" : ""}
+                className={isActive("/contato") ? "active" : ""}
                 onClick={() => setMenuOpen(false)}
               >
                 Contato
