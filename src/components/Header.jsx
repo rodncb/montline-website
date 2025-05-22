@@ -7,9 +7,7 @@ function Header() {
 
   // Função para verificar a rota ativa
   const isActive = (path) => {
-    return (
-      location.hash === "#" + path || (path === "/" && location.hash === "")
-    );
+    return location.pathname === path;
   };
 
   // Fechar o menu quando mudar de rota
@@ -38,7 +36,9 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <img src="logo-monline.png" alt="MONTLINE Logo" />
+        <Link to="/">
+          <img src="logo-monline.png" alt="MONTLINE Logo" />
+        </Link>
 
         <div
           className={`mobile-menu-toggle ${menuOpen ? "active" : ""}`}
@@ -89,15 +89,25 @@ function Header() {
             </li>
           </ul>
           <div className="cta-mobile">
-            <Link to="/contato" className="btn-quote">
+            <a 
+              href={`https://wa.me/5524999112822?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento.")}`}
+              className="btn-quote"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Solicitar orçamento
-            </Link>
+            </a>
           </div>
         </nav>
         <div className="cta-button">
-          <Link to="/contato" className="btn-quote">
+          <a 
+            href={`https://wa.me/5524999112822?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento.")}`}
+            className="btn-quote"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Solicitar orçamento
-          </Link>
+          </a>
         </div>
       </div>
     </header>
